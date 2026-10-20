@@ -1,6 +1,7 @@
 (function () {
   'use strict';
   var page = window.location.pathname.split('/').pop() || 'index.html';
+  if (page === 'seminars-archive.html') page = 'seminars.html';
   var navItems = [
     { href: 'about.html', label: 'About' },
     { href: 'sponsors.html', label: 'Sponsors' },
@@ -33,31 +34,6 @@
     footer.innerHTML = '<data class="u-url" value="/"></data><div class="wrapper"><div class="footer-col-wrapper"><div class="footer-col"><img src="assets/images/sponsors/SIAM_student.png" alt="SIAM student chapter logo"></div><div class="footer-col"><p>The University of Oxford SIAM Student Chapter is a fast-growing society devoted to facilitating engagement between the University of Oxford’s international applied mathematics community and industry through conferences, workshops, competitions, prizes and other events.</p><div class="footer-social"><span>Follow the Chapter</span><a href="https://www.instagram.com/oxfordsiamsc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram: @oxfordsiamsc"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company/oxfordsiamsc/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn: Oxford SIAM Student Chapter"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></div></div></div></div>';
     document.body.appendChild(footer);
   }
-  function linkCommitteeProfiles() {
-    var profiles = {
-      'Thomas Higham': 'https://www.maths.ox.ac.uk/people/thomas.higham',
-      'Mark Alvares': 'https://www.maths.ox.ac.uk/people/mark.alvaresperes',
-      'Prof Dominic Vella': 'https://www.maths.ox.ac.uk/people/dominic.vella',
-      'Jesus Ait Idir Lahuerta': 'https://www.maths.ox.ac.uk/people/jesus.aitidirlahuerta',
-      'Francesco Hrobat': 'https://www.maths.ox.ac.uk/people/francesco.hrobat'
-    };
-    document.querySelectorAll('.committee').forEach(function (section) {
-      var heading = section.querySelector('h2');
-      if (!heading || heading.textContent.trim() !== 'Committee 2026') return;
-      section.querySelectorAll('.committee-member').forEach(function (member) {
-        var name = member.querySelector('h3');
-        var url = name && profiles[name.textContent.trim()];
-        if (!url) return;
-        var link = document.createElement('a');
-        link.href = url;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        link.className = 'committee-profile-link';
-        while (member.firstChild) link.appendChild(member.firstChild);
-        member.appendChild(link);
-      });
-    });
-  }
   function setupScrollReveals() {
     var targets = document.querySelectorAll('.committee, .social-follow, .sponsor, .post-header, .post-content > h2');
     if (!targets.length || !('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -78,7 +54,6 @@
   document.addEventListener('DOMContentLoaded', function () {
     renderHeader();
     renderFooter();
-    linkCommitteeProfiles();
     setupScrollReveals();
   });
 }());

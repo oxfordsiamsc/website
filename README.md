@@ -9,8 +9,25 @@ Edit the files here on GitHub (pencil icon) or in a local clone and commit to `m
 The pages are plain HTML; shared header, footer and navigation live in
 `assets/js/site-shell.js`, styles in `assets/css/style.css`.
 
-The Seminars page fills itself from the
-[jams-seminars](https://github.com/oxfordsiamsc/jams-seminars) feed.
+### Committee and sponsors
+
+Don't edit those sections of the HTML by hand. Edit the data instead:
+
+- `data/committee.json`: one entry per year with `name`, `role`, optional `photo`
+  (a file in `assets/images/committee/`, otherwise a silhouette is shown) and optional
+  `profile` link. The home page shows the latest `home_years` committees, the About
+  page shows all of them.
+- `data/sponsors.json`: `name`, `url` and `logo` (a file in `assets/images/sponsors/`).
+
+Upload new photos or logos first, then commit the JSON change. A GitHub Action
+regenerates the HTML between the `BEGIN generated` / `END generated` comments and commits it.
+Locally you can run `python scripts/build_pages.py`.
+
+### Seminars
+
+The Seminars page and the [archive](https://people.maths.ox.ac.uk/siamsc/seminars-archive.html)
+fill themselves from the [jams-seminars](https://github.com/oxfordsiamsc/jams-seminars)
+feed. Slides are added there, in `slides.json`.
 
 ## Publishing
 

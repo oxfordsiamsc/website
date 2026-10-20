@@ -1,0 +1,133 @@
+{
+  "home_years": 2,
+  "committees": [
+    {
+      "year": 2026,
+      "members": [
+        {
+          "name": "Thomas Higham",
+          "role": "President",
+          "photo": "Thomas_Higham.jpg",
+          "profile": "https://www.maths.ox.ac.uk/people/thomas.higham"
+        },
+        {
+          "name": "Saffron Hooghan-Cormican",
+          "role": "Treasurer",
+          "photo": "cormican.jpg"
+        },
+        {
+          "name": "Mark Alvares",
+          "role": "Secretary",
+          "photo": "mark.webp",
+          "profile": "https://www.maths.ox.ac.uk/people/mark.alvaresperes"
+        },
+        {
+          "name": "Prof Dominic Vella",
+          "role": "Faculty Advisor",
+          "photo": "dominicvella.jpg",
+          "profile": "https://www.maths.ox.ac.uk/people/dominic.vella"
+        },
+        {
+          "name": "Jesus Ait Idir Lahuerta",
+          "role": "JAMS Coordinator",
+          "photo": "jesus.png",
+          "profile": "https://www.maths.ox.ac.uk/people/jesus.aitidirlahuerta"
+        },
+        {
+          "name": "Francesco Hrobat",
+          "role": "IT and Social Media Officer",
+          "photo": "hrobat.jpg",
+          "profile": "https://www.maths.ox.ac.uk/people/francesco.hrobat"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "members": [
+        {
+          "name": "Zoe Godard",
+          "role": "President",
+          "photo": "Zoe_Godard.jpg"
+        },
+        {
+          "name": "Saffron Hooghan-Cormican",
+          "role": "Treasurer"
+        },
+        {
+          "name": "Cayen Wang",
+          "role": "Secretary"
+        },
+        {
+          "name": "Prof Dominic Vella",
+          "role": "Faculty Advisor",
+          "photo": "dominicvella.jpg"
+        },
+        {
+          "name": "Thomas Higham",
+          "role": "JAMS Coordinator",
+          "photo": "Thomas_Higham.jpg"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "members": [
+        {
+          "name": "Nicholas Ryan",
+          "role": "President",
+          "photo": "Nick_Ryan.png"
+        },
+        {
+          "name": "Nicholas Daultry-Ball",
+          "role": "Treasurer",
+          "photo": "Nick_DB.png"
+        },
+        {
+          "name": "Zoe Godard",
+          "role": "Secretary",
+          "photo": "Zoe_Godard.jpg"
+        },
+        {
+          "name": "Prof Dominic Vella",
+          "role": "Faculty Advisor",
+          "photo": "dominicvella.jpg"
+        },
+        {
+          "name": "Javier Chico-Vasquez",
+          "role": "JAMS coordinator",
+          "photo": "Javi_Chico.png"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "members": [
+        {
+          "name": "Rebecca Crossley",
+          "role": "President",
+          "photo": "Rebecca.jpg"
+        },
+        {
+          "name": "Nicholas Daultry-Ball",
+          "role": "Treasurer",
+          "photo": "Nick_DB.png"
+        },
+        {
+          "name": "Nicholas Ryan",
+          "role": "Secretary",
+          "photo": "Nick_Ryan.png"
+        },
+        {
+          "name": "Prof Dominic Vella",
+          "role": "Faculty Advisor",
+          "photo": "dominicvella.jpg"
+        },
+        {
+          "name": "Matthew Cotton",
+          "role": "JAMS coordinator",
+          "photo": "Matthew_Cotton.png"
+        }
+      ]
+    }
+  ]
+}

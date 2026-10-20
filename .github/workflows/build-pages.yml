@@ -1,0 +1,38 @@
+name: Build pages from data
+
+on:
+  push:
+    branches: [main]
+    paths: [data/**, scripts/build_pages.py]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate committee and sponsor sections
+        run: python scripts/build_pages.py
+
+      - name: Commit generated HTML
+        run: |
+          if git diff --quiet; then
+            echo "HTML already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Regenerate pages from data"
+          git push

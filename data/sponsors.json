@@ -1,0 +1,24 @@
+{
+  "sponsors": [
+    {
+      "name": "University of Oxford Mathematical Institute",
+      "url": "https://www.maths.ox.ac.uk/",
+      "logo": "oxford_long.png"
+    },
+    {
+      "name": "Institute for Mathematics & its Applications",
+      "url": "https://ima.org.uk/",
+      "logo": "ima_long.png"
+    },
+    {
+      "name": "Society for Industrial and Applied Mathematics",
+      "url": "https://www.siam.org/",
+      "logo": "siam_long.png"
+    },
+    {
+      "name": "G-Research",
+      "url": "https://www.gresearch.com/",
+      "logo": "GResearch.png"
+    }
+  ]
+}
