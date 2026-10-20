@@ -4,3 +4,5 @@
 .DS_Store
 # Old duplicate copy of the site that exists only on the server
 /siamsc/
+# Old git metadata kept on the server
+/.git-old-*/
