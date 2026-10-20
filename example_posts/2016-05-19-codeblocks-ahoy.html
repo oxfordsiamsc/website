@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link id="main-stylesheet" rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper">
+
+    <a href="/">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+      </svg>
+    </a>
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon"></span>
+        </label>
+
+        <div class="nav-items">
+  <a class="nav-item" href="/about/">About</a>
+  <a class="nav-item" href="/sponsors.html">Sponsors</a>
+  <a class="nav-item" href="/contact.html">Contact</a><a class="nav-item" href="https://www.amp2025.com/" target="_blank" rel="noopener">Conference '25</a><a class="nav-item" href="https://www.maths.ox.ac.uk/events/list/650" target="_blank" rel="noopener">Seminars</a></div>
+
+      </nav>
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline"></h1>
+    <div class="post-meta">
+      <time class="dt-published" datetime="" itemprop="datePublished">
+        
+      </time>
+    </div>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>An article with various blocks of highlighted code snippets.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">=begin
+  Dummy class nested inside a dummy module
+  Private API
+=end</span>
+</code></pre></div></div>
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">- This line is redacted
+- This line has been deleted
+</span><span class="gi">+ This line is visible
++ This line has been inserted
+</span><span class="p">This line has not been changed
+</span></code></pre></div></div>
+<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@import</span> <span class="s">"base"</span>
+
+<span class="nc">.card</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">inline-block</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span>
+
+  <span class="k">&amp;</span><span class="nd">:hover</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="mh">#ab45ef</span><span class="err">;</span>
+</code></pre></div></div>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">21</span> <span class="o">+</span> <span class="mi">54</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">foo</span> <span class="o">||=</span> <span class="n">bar</span>
+<span class="n">foo</span> <span class="o">/</span> <span class="n">bar</span>
+
+<span class="mi">24</span>
+<span class="mf">45.75</span>
+<span class="mh">0x2C716</span>
+<span class="p">\</span><span class="n">x0A</span>
+<span class="mo">01010</span>
+
+<span class="sr">/ya?ml/</span>
+<span class="s2">"yaml"</span>
+</code></pre></div></div>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kp">include</span> <span class="no">Enumerable</span>
+
+<span class="k">module</span> <span class="nn">Foo</span>
+  <span class="k">class</span> <span class="nc">Bar</span>
+    <span class="no">LIPSUM</span> <span class="o">=</span> <span class="s2">"lorem ipsum dolor sit"</span>
+
+    <span class="nb">attr_reader</span> <span class="ss">:layout</span>
+
+    <span class="k">def</span> <span class="nf">initialize</span>
+      <span class="vi">@layout</span> <span class="o">=</span> <span class="no">Layout</span><span class="p">.</span><span class="nf">new</span>
+    <span class="k">end</span>
+
+    <span class="c1"># instance method</span>
+    <span class="k">def</span> <span class="nf">profile</span>
+      <span class="n">measure_time</span> <span class="k">do</span>
+        <span class="n">compile</span> <span class="n">layout</span>
+        <span class="n">layout</span><span class="p">.</span><span class="nf">render_with</span> <span class="no">Bar</span><span class="o">::</span><span class="no">LIPSUM</span>
+      <span class="k">end</span>
+    <span class="k">rescue</span> <span class="no">ArgumentError</span>
+      <span class="kp">false</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># Execute code</span>
+<span class="no">Foo</span><span class="o">::</span><span class="no">Bar</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">profile</span>
+</code></pre></div></div>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">foo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">foo</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">bar</span><span class="p">:</span><span class="w"> </span><span class="s1">'baz'</span><span class="w"> </span><span class="cp">%}</span>
+<span class="cp">{{</span><span class="w"> </span><span class="nv">foo</span><span class="w"> </span><span class="cp">}}</span>
+</code></pre></div></div>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">author</span><span class="pi">:</span>
+  <span class="na">admin</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">John Doe</span>
+  <span class="na">email</span><span class="pi">:</span> <span class="s">johndoe@example.com</span>
+  <span class="na">id</span><span class="pi">:</span> <span class="m">75636474</span>
+</code></pre></div></div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello World<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Hello, World!<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hll"><span class="nt">&lt;html&gt;</span>
+</span>  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+<span class="hll">    <span class="nt">&lt;title&gt;</span>Hello World<span class="nt">&lt;/title&gt;</span>
+</span>  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+<span class="hll">    <span class="nt">&lt;p&gt;</span>Hello, World!<span class="nt">&lt;/p&gt;</span>
+</span>  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello World<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Hello, World!<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="hll"><span class="nt">&lt;html&gt;</span>
+</span>  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+<span class="hll">    <span class="nt">&lt;title&gt;</span>Hello World<span class="nt">&lt;/title&gt;</span>
+</span>  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+<span class="hll">    <span class="nt">&lt;p&gt;</span>Hello, World!<span class="nt">&lt;/p&gt;</span>
+</span>  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+
+</pre></td></tr></tbody></table></code></pre></figure>
+
+
+  </div>
+
+  <a class="u-url" href="/example_posts/2016-05-19-codeblocks-ahoy.html" hidden></a>
+</article>
+
+      </div>
+    </main><link id="fa-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/css/all.min.css">
+
+<footer class="site-footer h-card">
+  <data class="u-url" value="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <!-- New Column for Image -->
+      <div class="footer-col">
+        <img src="/assets/images/sponsors/SIAM_student.png" alt="Footer Logo" style="height:100%; width:auto;">
+
+      </div>
+
+
+      <div class="footer-col">
+        <p>The University of Oxford SIAM-IMA Student Chapter is a fast-growing  society devoted to facilitating engagement between the University of  Oxford’s international applied mathematics community and industry through  conferences, workshops, competitions, prizes and other events.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+
+</html>

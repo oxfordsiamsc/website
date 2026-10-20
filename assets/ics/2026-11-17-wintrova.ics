@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Oxford SIAM Student Chapter//JAMS//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:jams-2026-11-17-wintrova@siamsc.maths.ox.ac.uk
+DTSTAMP:20261020T120000Z
+DTSTART:20261117T123000Z
+DTEND:20261117T130000Z
+SUMMARY:JAMS: Modelling brain clearance across scales
+DESCRIPTION:Junior Applied Mathematics Seminar. Speaker: Lucie Wintrová 
+ (Faculty of Mathematics and Physics\, Charles University\, Prague). Deta
+ ils: https://www.maths.ox.ac.uk/node/82762
+LOCATION:C3\, Mathematical Institute\, University of Oxford
+URL:https://www.maths.ox.ac.uk/node/82762
+END:VEVENT
+END:VCALENDAR

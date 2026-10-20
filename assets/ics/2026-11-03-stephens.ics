@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Oxford SIAM Student Chapter//JAMS//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:jams-2026-11-03-stephens@siamsc.maths.ox.ac.uk
+DTSTAMP:20261020T120000Z
+DTSTART:20261103T123000Z
+DTEND:20261103T130000Z
+SUMMARY:JAMS: Modelling the loss of cell cycle synchrony in embryo develo
+ pment
+DESCRIPTION:Junior Applied Mathematics Seminar. Speaker: Ben Stephens (Ma
+ thematical Institute\, University of Oxford). Details: https://www.maths
+ .ox.ac.uk/node/83068
+LOCATION:C3\, Mathematical Institute\, University of Oxford
+URL:https://www.maths.ox.ac.uk/node/83068
+END:VEVENT
+END:VCALENDAR

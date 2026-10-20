@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Oxford SIAM Student Chapter//JAMS//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:jams-2026-12-01-hagopian@siamsc.maths.ox.ac.uk
+DTSTAMP:20261020T120000Z
+DTSTART:20261201T123000Z
+DTEND:20261201T130000Z
+SUMMARY:JAMS: Experimentally informed Modelling of Graphite Hysteresis fo
+ r Lithium Ion Batteries
+DESCRIPTION:Junior Applied Mathematics Seminar. Speaker: Emmanuelle Hagop
+ ian (Department of Engineering Science\, University of Oxford). Details:
+  https://www.maths.ox.ac.uk/node/83069
+LOCATION:C3\, Mathematical Institute\, University of Oxford
+URL:https://www.maths.ox.ac.uk/node/83069
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,6 @@
+# Editor backups and stray files
+*~
+.Rhistory
+.DS_Store
+# Old duplicate copy of the site that exists only on the server
+/siamsc/

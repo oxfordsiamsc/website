@@ -1,0 +1,3 @@
+# Never serve version-control data, hidden files or editor backups.
+RedirectMatch 404 /\.(git|svn|hg|Rhistory|htaccess)
+RedirectMatch 404 ~$
