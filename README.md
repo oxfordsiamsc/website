@@ -3,6 +3,9 @@
 Source of <https://people.maths.ox.ac.uk/siamsc/>, served by the Mathematical Institute
 web server from `/mi/share/htdocs/people/siamsc`.
 
+**Maintaining the site? Read [MAINTENANCE.md](MAINTENANCE.md)**: it covers every routine
+task (committee, sponsors, slides, room changes, publishing) step by step.
+
 ## Editing
 
 Edit the files here on GitHub (pencil icon) or in a local clone and commit to `main`.
