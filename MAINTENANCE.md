@@ -186,6 +186,20 @@ To refresh immediately, go to `jams-seminars` → *Actions* → **Update seminar
 
 ### 5.5 Add slides for a talk
 
+If the speaker sent a file (PDF, PPTX…), name it `surname_jams_YYYY-MM-DD.ext` and put the
+same file in all three places:
+
+- `website`: `assets/slides/` (then deploy, [§3](#3-publishing-changes));
+- on the server, the old `siamsc/` copy (outside git, [§10](#10-what-else-is-on-the-server)):
+  after deploying, run
+  `cp /mi/share/htdocs/people/siamsc/assets/slides/<file> /mi/share/htdocs/people/siamsc/siamsc/assets/slides/`;
+- `jams-seminars`: `slides/` (backup copy, served at
+  `https://oxfordsiamsc.github.io/jams-seminars/slides/...`).
+
+The link to use is the one on the chapter site,
+`https://people.maths.ox.ac.uk/siamsc/assets/slides/<file>`. If the slides are already online
+somewhere else (e.g. the speaker's own page), just use that link.
+
 In the `jams-seminars` repository, edit `slides.json` and add:
 
 ```json
